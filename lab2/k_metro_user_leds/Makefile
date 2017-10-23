@@ -3,6 +3,6 @@ all:  push user
 push: 
 	arm-linux-gnueabihf-gcc -o pushLEDmmap pushLEDmmap.c
 user: 
-	arm-linux-gnueabihf-gcc -o userLEDmmap userLEDmmap.c
+	arm-linux-gnueabihf-gcc -o Metronome_led Metronome_led.c
 
 

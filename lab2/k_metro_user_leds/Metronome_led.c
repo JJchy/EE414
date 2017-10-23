@@ -15,7 +15,7 @@
 #include <fcntl.h> 
 #include <signal.h>    // Defines signal-handling functions (i.e. trap Ctrl-C)
 #include <unistd.h>		// close()
-#include "userLEDmmap.h"
+#include "Metronome_led.h"
 
 // Global variables
 volatile int keepgoing = 1;    // Set to 0 when Ctrl-c is pressed
@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
     printf("GPIO SETDATAOUTADDR mapped to %p\n", gpio_setdataout_addr);
     printf("GPIO CLEARDATAOUT mapped to %p\n", gpio_cleardataout_addr);
 
-    int tempo = 90;
+    int tempo = 30;
     int time = MIN / (tempo * 2);
 
     while (keepgoing)
