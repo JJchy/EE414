@@ -28,7 +28,6 @@ http://stackoverflow.com/questions/7469139/what-is-equivalent-to-getch-getche-in
 static struct termios old_tio;
 static struct termios new_tio;
 
-char waitchar[4] = { '|', '/', '-', '\\'  };
 
 // Initialize new terminal i/o settings 
 void init_termios(int echo) 
